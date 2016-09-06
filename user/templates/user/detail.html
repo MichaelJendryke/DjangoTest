@@ -1,0 +1,5 @@
+{% if user %}
+    <h1>{{ user.firstname }} {{ user.middlename }} {{ user.lastname }}</h1>
+{% else %}
+    <p>A problem has occurred with user {{user.id}}</p>
+{% endif %}

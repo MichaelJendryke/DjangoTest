@@ -1,0 +1,9 @@
+{% if article %}
+    <h1>{{ article.title }}</h1>
+    <h4>{{ article.authors }}</h4>
+    <h4>Published on: {{ article.pub_date}}</h4>
+    <p><b>Abstract: </b>{{ article.abstract}}</p>
+    <div>{{ article.main_text}}</div>
+{% else %}
+    <p>A problem has occurred with article {{article.code}}</p>
+{% endif %}
