@@ -24,7 +24,7 @@ def abstract(request, code):
 def full(request, code):
     try:
         a = article.objects.get(code=code)
-        
+
     except article.DoesNotExist:
         raise Http404("Article does not exist")
     return render(request, 'article/full.html', {'article': a})
